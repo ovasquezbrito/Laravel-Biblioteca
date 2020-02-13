@@ -11,12 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/foot', function () {
-    return 'Mi Aplicacion de Biblioteca';
-});
-
-Route::get('/permiso', 'PermisoController@index');
+Route::get('/', 'InicioController@index');
